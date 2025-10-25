@@ -1,0 +1,62 @@
+body {
+  background: #121212;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+#pw:active{
+  border-color: black;
+}
+
+.container {
+  text-align: center;
+  background: #1e1e1e;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(255,255,255,0.06);
+  max-width: 800px;
+  width: 90%;
+  position: absolute;
+  top: 65%;
+}
+
+.rasam-image {
+  border-radius: 8px;
+  opacity: 0.9;
+}
+
+.dosa-image {
+  border-radius: 8px;
+  cursor: grab;
+  transition: box-shadow 0.2s ease, transform 0.1s ease;
+}
+
+.dosa-image:active {
+  cursor: grabbing;
+  box-shadow: 0 0 20px rgba(3, 218, 198, 0.6);
+}
+
+.caption {
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.question {
+  margin-top: 10px;
+  font-size: 1em;
+  color: #cccccc;
+}
+
+@media screen and (max-width: 600px) {
+  .dosa-image { width: 300px; }
+  .rasam-image { width: 150px; }
+  .container { padding: 20px; }
+}
